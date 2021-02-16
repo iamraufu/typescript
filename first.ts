@@ -22,3 +22,18 @@ function fullName2(firstName:string,lastName:string):string{
 }
 
 const user = fullName2('Raufu','Prezens')
+
+function doubleItAndConsole(num:number):void{
+    console.log(num*2)
+}
+
+doubleItAndConsole(10)
+
+const multiply = (x:number,y:number):number=> x*y
+console.log(multiply(3,7))
+
+let divide:(x:number,y:number)=>number;
+
+divide =(x,y)=>x/y
+
+console.log(divide(10,5))
