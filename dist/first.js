@@ -36,10 +36,10 @@ for (var i = 0; i < friends.length; i++) {
     }
 }
 console.log("Friend with largest name " + megaName);
-var Person = {
-    name: "Raufu",
-    age: 21
-};
+// const Person = {
+//     name : "Raufu",
+//     age: 21
+// }
 var friend;
 friend = {
     name: "efty",
@@ -66,3 +66,17 @@ var fresherPlayer = {
     salary: 25000000
 };
 getBonus(Messy, ["Suarez", "Neymer"]);
+var Person = /** @class */ (function () {
+    function Person(name, surName) {
+        this.name = name;
+        this._partner = name;
+        this.surName = surName;
+    }
+    Person.prototype.getName = function () {
+        return this.name + ' ' + this._partner;
+    };
+    return Person;
+}());
+var sam = new Person("Samual", "David");
+console.log("Name ", sam.name, sam.surName);
+var samName = "Ben";

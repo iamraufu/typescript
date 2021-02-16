@@ -51,10 +51,10 @@ for (let i = 0; i < friends.length; i++) {
 }
 console.log("Friend with largest name "+ megaName)
 
-const Person = {
-    name : "Raufu",
-    age: 21
-}
+// const Person = {
+//     name : "Raufu",
+//     age: 21
+// }
 
 let friend:{
     name:string,
@@ -95,3 +95,21 @@ const fresherPlayer = {
     salary: 25000000
 }
 getBonus(Messy,["Suarez","Neymer"])
+
+class Person {
+    name: string;
+    private _partner:string;
+    readonly surName: string;
+    constructor(name: string, surName:string){
+        this.name = name
+        this._partner = name;
+        this.surName = surName;
+    }
+    getName(): string{
+        return this.name+' '+this._partner;
+    }
+}
+
+const sam = new Person("Samual","David")
+console.log("Name ",sam.name,sam.surName)
+const samName = "Ben";
