@@ -37,3 +37,30 @@ let divide:(x:number,y:number)=>number;
 divide =(x,y)=>x/y
 
 console.log(divide(10,5))
+
+const numbers:number[]=[2,3,4,5,6,7]
+numbers.push(5)
+
+const friends:string[]=["raufu","prezens",'iamraufu',"eftykhar"]
+let megaName:string = ' '
+for (let i = 0; i < friends.length; i++) {
+    const friend = friends[i];
+    if(friend.length>megaName.length){
+        megaName = friend
+    }
+}
+console.log("Friend with largest name "+ megaName)
+
+const Person = {
+    name : "Raufu",
+    age: 21
+}
+
+let friend:{
+    name:string,
+    age:number
+}
+friend={
+    name:"efty",
+    age:21
+}
