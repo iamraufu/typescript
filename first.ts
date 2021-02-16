@@ -64,3 +64,34 @@ friend={
     name:"efty",
     age:21
 }
+
+interface Player{
+    club:string,
+    name:string,
+    salary:number,
+    wife?:string,
+    isPlaying: boolean
+}
+
+const Ronaldo:Player = {
+    name : "Christiano",
+    club: "Real Madrid",
+    salary: 60000000,
+    wife:"Mrs. ronaldo",
+    isPlaying:true
+}
+const Messy:Player = {
+    name : "Lionel",
+    club: "Barcelona",
+    salary: 45000000,
+    isPlaying:true
+}
+
+function getBonus(player:Player,friends:string[]){
+    return player.salary*.1
+}
+const fresherPlayer = {
+    age: 31,
+    salary: 25000000
+}
+getBonus(Messy,["Suarez","Neymer"])

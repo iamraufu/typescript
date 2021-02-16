@@ -45,3 +45,24 @@ friend = {
     name: "efty",
     age: 21
 };
+var Ronaldo = {
+    name: "Christiano",
+    club: "Real Madrid",
+    salary: 60000000,
+    wife: "Mrs. ronaldo",
+    isPlaying: true
+};
+var Messy = {
+    name: "Lionel",
+    club: "Barcelona",
+    salary: 45000000,
+    isPlaying: true
+};
+function getBonus(player, friends) {
+    return player.salary * .1;
+}
+var fresherPlayer = {
+    age: 31,
+    salary: 25000000
+};
+getBonus(Messy, ["Suarez", "Neymer"]);
