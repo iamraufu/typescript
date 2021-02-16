@@ -9,3 +9,16 @@ let sentence: string = `Hey, it's me ${fullName}
 I'll be ${age+1} next year.
 `
 console.log(sentence)
+
+function add(n1:any,n2:number | string){
+    return n1+n2
+}
+
+add(13,7)
+add("13",7)
+
+function fullName2(firstName:string,lastName:string):string{
+    return firstName+ " " + lastName
+}
+
+const user = fullName2('Raufu','Prezens')
